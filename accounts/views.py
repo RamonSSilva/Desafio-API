@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework.viewsets import ModelViewSet
+from .models import Responsavel
+from .serializers import ResponsavelSerializer
 
-# Create your views here.
+
+class ResponsavelViewSet(ModelViewSet):
+    queryset = Responsavel.objects.all()
+    serializer_class = ResponsavelSerializer
