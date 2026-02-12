@@ -74,7 +74,7 @@ docker compose up --build
 Na primeira execução pode demorar alguns minutos, pois o Docker irá:
 
 -   Baixar a imagem do Python
--   Instalar as dependências
+-   Instalar dependencias
 -   Criar o container
 -   Iniciar o servidor Django
 
@@ -131,9 +131,12 @@ Para obter um token de acesso:
 
 POST http://127.0.0.1:8000/api/token/
 
-Envie no corpo da requisição:
+Exemplo de envio no corpo da requisição:
 
-{ "username": "seu_usuario", "password": "sua_senha" }
+{
+    "username": "ramon.silva",
+    "password": "masterkey"
+}
 
 A resposta retornará:
 
